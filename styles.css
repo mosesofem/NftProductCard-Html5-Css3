@@ -1,0 +1,74 @@
+/* Basic styling for the NFT card */
+.nft-card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    margin: 0 auto;
+    max-height: 100%; /*This ensures the card does not exceed the viewport height */
+    height: auto; /*This Allows the card to adjust its height based on content */
+  }
+  
+  /* Hover effect */
+  .nft-card:hover,
+  .nft-card.touch-active {
+    transform: translateY(-5px);
+  }
+  
+  /* Styling for the NFT image */
+  .nft-image {
+    width: 100%;
+    height: 51vh;
+    transition: transform 0.5s;
+  
+  }
+  
+  /* Hover effect for touch devices */
+  .nft-card:hover .nft-image,
+  .nft-card.touch-active .nft-image {
+    transform: scale(1.1);
+  }
+  
+  /* Styling for NFT title */
+  .nft-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  /* Styling for NFT description */
+  .nft-description {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for NFT price */
+  .nft-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: green;
+  }
+  
+  /* Styling for buy button */
+  .buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(17, 179, 119);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: green;
+  }
+  
